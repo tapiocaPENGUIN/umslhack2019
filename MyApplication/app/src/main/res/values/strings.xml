@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="num1">num1</string>
+    <string name="add">add</string>
+    <string name="num2">num2</string>
+    <string name="result">result</string>
+    <string name="leftbutton">Find Volunteers</string>
+    <string name="rightbutton">Account Info.</string>
+    <string name="bottomleftbutton">Find Work</string>
+    <string name="map">Map</string>
 </resources>
