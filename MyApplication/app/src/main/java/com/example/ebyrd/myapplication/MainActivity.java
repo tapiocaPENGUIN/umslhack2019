@@ -78,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
     public void storeusers(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String, Object> user = new HashMap<>();
-        user.put("first", "test");
-        user.put("last", "testtesttest");
+        user.put("first", "Scooby");
+        user.put("last", "Doo");
 
         db.collection("users")
                 .add(user)
