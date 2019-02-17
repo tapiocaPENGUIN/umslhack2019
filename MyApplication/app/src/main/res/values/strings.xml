@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">My Volunteering</string>
     <string name="num1">num1</string>
     <string name="add">add</string>
     <string name="num2">num2</string>
@@ -8,4 +8,44 @@
     <string name="rightbutton">Account Info.</string>
     <string name="bottomleftbutton">Find Work</string>
     <string name="map">Map</string>
+    <string-array name="Locations">
+        <item>Food Bank</item>
+        <item>Farm</item>
+        <item>Zoo</item>
+        <item>Goodwill</item>
+        <item>Soup Kithen</item>
+        <item>Childrens Home</item>
+        <item>VA Center</item>
+        <item>Sewing</item>
+        <item>Blind Veterans</item>
+        <item>Sewing</item>
+        <item>Blind Veterans</item>
+    </string-array>
+    <string-array name="Descriptions">
+        <item>Searving Food</item>
+        <item>Food Picker</item>
+        <item>Poop Picker</item>
+        <item>Clothes Sorter</item>
+        <item>Kitchen Helper</item>
+        <item>Sewing</item>
+        <item>Blind Veterans</item>
+        <item>Sewing</item>
+        <item>Blind Veterans</item>
+        <item>Sewing</item>
+        <item>Blind Veterans</item>
+    </string-array>
+    <string-array name="Points">
+        <item>100 points</item>
+        <item>200 points</item>
+        <item>250 points</item>
+        <item>250 points</item>
+        <item>250 points</item>
+        <item>250 points</item>
+        <item>300 points</item>
+        <item>300 points</item>
+        <item>300 points</item>
+        <item>300 points</item>
+        <item>300 points</item>
+    </string-array>
+
 </resources>
