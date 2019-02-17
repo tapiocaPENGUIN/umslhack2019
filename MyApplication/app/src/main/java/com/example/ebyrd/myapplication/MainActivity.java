@@ -24,7 +24,6 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,64 +32,56 @@ public class MainActivity extends AppCompatActivity {
         storeusers();
 
 
-        Button mapbuttonpress = (Button) findViewById(R.id.button2);
-        mapbuttonpress.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            Intent startintent = new Intent(getApplicationContext(),SecondActivity.class);
-            // show how to pass information to the secondactivity
-                startActivity(startintent);
-            }
-
-        });
-
-        Button button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startintent = new Intent(getApplicationContext(),Findvolunteers.class);
+        //Button mapbuttonpress = (Button) findViewById(R.id.button2);
+        //mapbuttonpress.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View v) {
+                //Intent startintent = new Intent(getApplicationContext(), SecondActivity.class);
                 // show how to pass information to the secondactivity
-                startActivity(startintent);
-            }
+                //startActivity(startintent);
+            //}
 
-        });
+        //});
 
-        Button button6 = (Button) findViewById(R.id.button6);
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent startintent = new Intent(getApplicationContext(),Findwork.class);
+        //Button button6 = (Button) findViewById(R.id.button6);
+        //button6.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View v) {
+
+                //Intent startintent = new Intent(getApplicationContext(), Findwork.class);
                 // show how to pass information to the secondactivity
-                startActivity(startintent);
-            }
+                //startActivity(startintent);
+            //}
 
-        });
+        //});
 
         Button button7 = (Button) findViewById(R.id.button7);
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startintent = new Intent(getApplicationContext(),AccountInfo.class);
+                Intent startintent = new Intent(getApplicationContext(), AccountInfo.class);
                 // show how to pass information to the secondactivity
                 startActivity(startintent);
             }
 
         });
+
+
+    Button user = (Button) findViewById(R.id.users);
+        user.setOnClickListener(new View.OnClickListener()
+
+    {
+        @Override
+        public void onClick (View v){
+        Intent startintent = new Intent(getApplicationContext(), SecondActivity.class);
+        // show how to pass information to the secondactivity
+        startActivity(startintent);
     }
 
-        Button user = (Button) findViewById(R.id.users);
-        user.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startintent = new Intent(getApplicationContext(),SecondActivity.class);
-                // show how to pass information to the secondactivity
-                startActivity(startintent);
-            }
+    });
 
-        });
-
-
+}
     public void storeusers(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String, Object> user = new HashMap<>();

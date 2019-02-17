@@ -40,11 +40,9 @@ public class Login_Activity extends AppCompatActivity {
         log_login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
-
-
-
-
+                        Intent startintent = new Intent(getApplicationContext(), AccountInfo.class);
+                        // show how to pass information to the secondactivity
+                        startActivity(startintent);
             }
         });
 
@@ -54,6 +52,7 @@ public class Login_Activity extends AppCompatActivity {
                 Intent startintent = new Intent(getApplicationContext(),SecondActivity.class);
                 // show how to pass information to the secondactivity
                 startActivity(startintent);
+
             }
 
         });

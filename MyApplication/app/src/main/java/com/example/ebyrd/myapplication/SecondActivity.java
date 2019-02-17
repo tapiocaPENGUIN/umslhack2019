@@ -87,6 +87,10 @@ public class SecondActivity extends AppCompatActivity {
                             }
                         });
 
+                Intent startintent = new Intent(getApplicationContext(), AccountInfo.class);
+                // show how to pass information to the secondactivity
+                startActivity(startintent);
+
             }
         });
 
