@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".WorkDetailActivity"></activity>
+=======
+        <activity android:name=".Login_Activity"></activity>
+>>>>>>> 09664c627e0f330514163e2b431412b6ebbc7625
         <activity android:name=".AccountInfo" />
         <activity android:name=".Findwork" />
         <activity android:name=".Findvolunteers" />

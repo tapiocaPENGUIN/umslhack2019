@@ -79,6 +79,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+        Button user = (Button) findViewById(R.id.users);
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startintent = new Intent(getApplicationContext(),SecondActivity.class);
+                // show how to pass information to the secondactivity
+                startActivity(startintent);
+            }
+
+        });
+
 
     public void storeusers(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
