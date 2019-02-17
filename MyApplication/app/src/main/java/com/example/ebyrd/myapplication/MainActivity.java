@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        storeusers();
+        //storeusers();
 
 
         //Button mapbuttonpress = (Button) findViewById(R.id.button2);
@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         Map<String, Object> user = new HashMap<>();
         user.put("first", "Scooby");
         user.put("last", "Doo");
+        user.put("points","5");
 
         db.collection("users")
                 .add(user)

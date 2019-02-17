@@ -8,93 +8,91 @@
     android:background="@drawable/ic_launcher_background">
 
 
-
     <RelativeLayout
-        android:layout_weight="2"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="2">
 
 
         <TextView
             android:id="@+id/textGrid"
 
 
-
-
-
-            android:layout_marginLeft="30dp"
-            android:layout_alignParentLeft="true"
-
-            android:textSize="32sp"
-            android:textColor="@android:color/white"
-            android:layout_centerInParent="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-             />
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 
+    <GridLayout
 
-<GridLayout
-
-    android:alignmentMode="alignMargins"
-    android:layout_weight="3"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:padding="14dp">
-
-    <android.support.v7.widget.CardView
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:cardCornerRadius="8dp"
-        >
+        android:layout_weight="3"
+        android:alignmentMode="alignMargins"
+        android:padding="14dp">
 
-        <LinearLayout
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_margin="16dp"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp">
 
-
-
-
-            <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
-                android:id="@+id/progressBar"
-
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:indeterminateTint="@android:color/holo_orange_dark"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
 
-                android:layout_width="1000dp"
-                android:layout_height="125dp" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-102dp"
+                    android:layout_marginRight="-102dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+
+                    android:layout_width="1000dp"
+                    android:layout_height="125dp"
+                    android:layout_centerHorizontal="true"
 
 
+                    android:layout_centerVertical="true"
+                    android:indeterminateTint="@android:color/holo_orange_dark" />
 
 
-
-        </LinearLayout>
-
+            </LinearLayout>
 
 
+        </android.support.v7.widget.CardView>
 
-
-
-    </android.support.v7.widget.CardView>
-
-</GridLayout>
+    </GridLayout>
 
 
 
@@ -167,6 +165,7 @@
         //Column 2
 
         <android.support.v7.widget.CardView
+
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -203,8 +202,6 @@
 
 
             </LinearLayout>
-
-
 
 
         </android.support.v7.widget.CardView>

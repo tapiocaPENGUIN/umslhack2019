@@ -67,7 +67,7 @@ public class SecondActivity extends AppCompatActivity {
                 user.put("Zip Code", _zip);
                 user.put("Password", _password);
                 user.put("DOB", _DOB);
-                user.put("Points", 0);
+                user.put("Points", 500);
 
               //  DocumentReference newUserRef = db.collection("Test-Users").document("Name");
                 //newUserRef.set(user);
