@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startintent = new Intent(getApplicationContext(), AccountInfo.class);
+                Intent startintent = new Intent(getApplicationContext(), Login_Activity.class);
                 // show how to pass information to the secondactivity
                 startActivity(startintent);
             }
