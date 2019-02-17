@@ -1,12 +1,15 @@
 package com.example.ebyrd.myapplication;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.ebyrd.myapplication.R;
@@ -21,10 +24,12 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         storeusers();
 
 
@@ -54,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent startintent = new Intent(getApplicationContext(),Findwork.class);
                 // show how to pass information to the secondactivity
                 startActivity(startintent);
@@ -71,10 +77,20 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
-
-
     }
+
+        Button user = (Button) findViewById(R.id.users);
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startintent = new Intent(getApplicationContext(),SecondActivity.class);
+                // show how to pass information to the secondactivity
+                startActivity(startintent);
+            }
+
+        });
+
+
     public void storeusers(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         Map<String, Object> user = new HashMap<>();
@@ -97,5 +113,7 @@ public class MainActivity extends AppCompatActivity {
                 });
 
     }
+
+
 
 }
